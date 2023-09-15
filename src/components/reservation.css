@@ -1,0 +1,438 @@
+
+:root {
+
+  
+   
+ 
+  
+  
+    --section-space: 70px;
+  
+    /**
+     * SHADOW
+     */
+  
+   
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  
+  
+  a,
+  img,
+  data,
+  span,
+  input,
+  button,
+  select,
+  ion-icon,
+  textarea { display: block; }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img { height: auto; }
+  
+  input,
+  button,
+  select,
+  textarea {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    outline: none;
+  }
+  
+  button { cursor: pointer; }
+  
+  address { font-style: normal; }
+  
+  
+  
+  form {
+    background-color: #010103;
+    color: var(--white);
+   
+    overflow: hidden;
+ 
+  }
+  
+  body.loaded { overflow: overlay; }
+  
+  body.nav-active { overflow: hidden; }
+  
+  ::-webkit-scrollbar { width: 5px; }
+  
+  ::-webkit-scrollbar-track { background-color: transparent; }
+  
+  ::-webkit-scrollbar-thumb { background-color: #666666; }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #TYPOGRAPHY
+  \*-----------------------------------*/
+  
+  
+  
+  .display-1 {
+    font-size: var(--fontSize-display-1);
+    line-height: var(--lineHeight-1);
+  }
+  
+  .headline-1 { font-size: var(--fontSize-headline-1); }
+  
+  .headline-2 {
+    font-size: var(--fontSize-headline-2);
+    line-height: var(--lineHeight-6);
+  }
+  
+  .title-1 { font-size: var(--fontSize-title-1); }
+  
+  .title-2 { font-size: var(--fontSize-title-2); }
+  
+  .title-3 { font-size: var(--fontSize-title-3); }
+  
+  .title-4 { font-size: var(--fontSize-title-4); }
+  
+  .body-1 {
+    font-size: var(--fontSize-body-1);
+    line-height: var(--lineHeight-6);
+  }
+  
+  .body-2 {
+    font-size: var(--fontSize-body-2);
+    line-height: var(--lineHeight-4);
+  }
+  
+  .body-3 { font-size: var(--fontSize-body-3); }
+  
+  .body-4 { font-size: var(--fontSize-body-4); }
+  
+  .label-1 { font-size: var(--fontSize-label-1); }
+  
+  .label-2 { font-size: var(--fontSize-label-2); }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #REUSED STYLE
+  \*-----------------------------------*/
+  
+  
+  
+  
+
+  
+  
+  .btn {
+    position: relative;
+    color: #f0f0f0;
+    font-size: var(--fontSize-label-2);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-5);
+    max-width: max-content;
+    border: 2px solid #666666;
+    padding: 12px 45px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+ 
+  
+  
+ 
+ 
+  
+  .bg-black-10 { background-color: #010103; }
+  
+  .grid-list {
+    display: grid;
+    gap: 40px;
+  }
+  
+ 
+ 
+  
+  .btn-text {
+    color: #010103;
+    padding-block-end: 4px;
+    margin-inline: auto;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-3);
+    font-weight: var(--weight-bold);
+    transition: var(--transition-1);
+  }
+  
+  .btn-text:is(:hover, :focus-visible) { color: #f0f0f0; }
+  
+  .shape {
+    display: none;
+    position: absolute;
+    max-width: max-content;
+    z-index: -1;
+  }
+  
+  .w-100 { width: 100%; }
+  
+  .move-anim { animation: move 5s linear infinite; }
+  
+  @keyframes move {
+    0%,
+    100% { transform: translateY(0); }
+  
+    50% { transform: translateY(30px); }
+  }
+  
+  .has-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .input-field {
+    background-color: #010103;
+    color: #f0f0f0;
+   
+    height: 56px;
+    padding: 10px 20px;
+    border: 1px solid#666666;
+    margin-block-end: 20px;
+    outline: none;
+    transition: border-color var(--transition-2);
+  }
+  
+  .input-field::placeholder { color: inherit; }
+  
+  .input-field:focus { border-color: #666666; }
+  
+  .icon-wrapper {
+    position: relative;
+    margin-block-end: 20px;
+  }
+  
+  .icon-wrapper .input-field {
+    margin-block-end: 0;
+    padding-inline-start: 40px;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .icon-wrapper ion-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    --ionicon-stroke-width: 50px;
+    pointer-events: none;
+  }
+  
+  .icon-wrapper ion-icon:first-child { left: 15px; }
+  
+  .icon-wrapper ion-icon:last-child { right: 10px; }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+  
+  /*-----------------------------------*\
+    #RESERVATION
+  \*-----------------------------------*/
+  
+  .reservation-form { margin-block-start: -270px; }
+  
+  .form-text { margin-block-end: 40px; }
+  .form{
+    width: 100%;
+   
+  }
+  .form-text .link {
+    display: inline;
+    ;
+  }
+  
+  .form-right .headline-1 { margin-block-end: 40px; }
+  
+  .form-right .contact-label { margin-block-end: 5px; }
+  
+  .form-right .separator { margin: 2px ; }
+  
+  .form-right .body-4 {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-3);
+  }
+  
+  .form-right .body-4:not(:last-child) { margin-block-end: 2px; }
+  
+  .form-left,
+  .form-right { padding: 4px; }
+  
+  .input-field[type="date"] {
+    text-transform: uppercase;
+    padding-inline-end: 10px;
+  }
+  
+  .input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
+  
+  textarea.input-field {
+    resize: none;
+    height: 140px;
+    padding-block: 20px;
+    line-height: var(--lineHeight-1);
+  }
+  
+  .form-left .btn {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .form-right {
+    background-repeat: repeat;
+    background-position: top left;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+ 
+  
+  @media (min-width: 575px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fontSize-body-2: 2rem;
+  
+    }
+  
+  
+  
+}
+  
+  
+  
+
+  
+  
+  
+    
+  
+    
+  
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  @media (min-width: 768px) {
+  
+   
+ 
+  
+  
+    /**
+     * RESERVATION
+     */
+  
+    .reservation .input-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+  
+    .reservation .input-wrapper:nth-child(4) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 992px) {
+  
+   
+    :root {
+      --section-space: 100px;
+  
+    }
+  
+    .reservation-form {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+    }
+  
+  
+  
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+   
+  
+   
+  
+  
+   
+  
+  
+  
